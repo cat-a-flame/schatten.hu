@@ -9,7 +9,7 @@
 .project-list {
     align-items: stretch;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 2rem;
     list-style-type: none;
     margin-top: 1rem;
@@ -29,13 +29,14 @@
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
+    margin: 0;
     padding: 1rem;
 }
 
     @media screen and (min-width: 50rem) {
         .project-entry {
             display: flex;
-            flex-basis: calc(100% / 2);
+            flex-basis: calc((100% / 2) - 2rem);
             flex-direction: column;
         }
     }
