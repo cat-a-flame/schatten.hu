@@ -6,3 +6,6 @@ pageTitle: 'Data'
 ---
 
 Data analysis
+
+{% assign chapters = collections.floral %}
+{% include 'footer.liquid' %}

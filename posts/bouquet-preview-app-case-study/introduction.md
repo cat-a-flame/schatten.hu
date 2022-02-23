@@ -9,3 +9,6 @@ tags: posts
 ---
 
 Intro
+
+{% assign chapters = collections.floral %}
+{% include 'footer.liquid' %}

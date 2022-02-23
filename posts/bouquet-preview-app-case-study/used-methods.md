@@ -6,3 +6,6 @@ pageTitle: 'Methods'
 ---
 
 Methods
+
+{% assign chapters = collections.floral %}
+{% include 'footer.liquid' %}

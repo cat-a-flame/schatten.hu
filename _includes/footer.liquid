@@ -1,0 +1,6 @@
+{% if chapters %}
+{% assign previousPost = chapters | getPreviousCollectionItem: page %}
+{% assign nextPost = chapters | getNextCollectionItem: page %}
+{% if previousPost %}Previous Blog Post: <a href="{{ previousPost.url }}">{{ previousPost.data.pageTitle }}</a>{% endif %}
+{% if nextPost %}Next Blog Post: <a href="{{ nextPost.url }}">{{ nextPost.data.pageTitle }}</a>{% endif %}
+{% endif %}

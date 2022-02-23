@@ -1,9 +1,5 @@
 ---
 layout: layouts/base.liquid
-pagination:
-  data: collections.floral
-  size: 5
-  reverse: true
 ---
 <article class="project-article">
     <h1 class="project-article-title">{{ pageTitle }}</h1>
@@ -14,10 +10,3 @@ pagination:
         <time datetime="{{ page.date }}">{{ page.date | date: "%Y %B %d." }}</time>
     </div>
 </article>
-
-Chapters:
-<ol>
-    {% for post in collections.floral %}
-        <li><a href="{{ post.url | url }}">{{ post.data.pageTitle }}</a></li>
-    {% endfor %}
-</ol>

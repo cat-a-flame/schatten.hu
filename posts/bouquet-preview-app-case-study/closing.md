@@ -6,3 +6,6 @@ pageTitle: 'Closing'
 ---
 
 Closing
+
+{% assign chapters = collections.floral %}
+{% include 'footer.liquid' %}
