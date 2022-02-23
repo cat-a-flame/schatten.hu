@@ -1,6 +1,6 @@
 ---
 layout: layouts/project.liquid
-tags: article
+tags: posts
 date: 2022-02-07T15:45:00
 pageTitle: 'CSS Hell'
 lead: "A collection of common CSS mistakes, and how to fix them."
