@@ -69,6 +69,20 @@ baseURL: https://schatten.hu
                 <h2 class="hero-area-position">User Experience Engineer <span>&amp;</span> cat lover</h2>
             </section>
 
+            <label>Chapters</label>
+            <ul>
+            {%- for post in collections.posts_blog -%}
+                {% assign match = page.url | split:post.url %}
+                <li>
+                    {% if match[0] != blank %}
+                    <a href="{{ post.url }}">{{ post.data.pageTitle }}</a>
+                    {% else %}
+                    {{ post.data.pageTitle }} &lt;- you are here
+                    {% endif %}
+                </li>
+            {%- endfor -%}
+            </ul>
+
             {{ content }}
         </main>
         <footer class="footer">

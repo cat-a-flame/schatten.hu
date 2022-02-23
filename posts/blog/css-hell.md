@@ -32,3 +32,5 @@ The site is built with eleventy, and deployed by Netlify. I want to keep it as s
 - Wesbite: [csshell.dev](https://csshell.dev/)
 - GitHub: [github.com/Stefanye/CSSHell](https://github.com/Stefanye/CSSHell)
 - Twitter: [twitter.com/css_hell](https://twitter.com/css_hell)
+
+{% include 'page_navigation.liquid' %}
