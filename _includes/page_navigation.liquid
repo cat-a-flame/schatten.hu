@@ -1,0 +1,16 @@
+{% assign prevPost = collections | getCollection: page | getPreviousCollectionItem: page %}
+{% assign nextPost = collections | getCollection: page  | getNextCollectionItem: page %}
+
+{% if prevPost %}
+<a href="{{ prevPost.url |  url }}" style="padding: 12px">
+  [&lt;&lt; Previous]
+</a>
+{{ prevPost.data.pageTitle }}
+{% endif %}
+
+{% if nextPost %}
+<a href="{{ nextPost.url |  url }}" style="padding: 12px">
+  [Next &gt;&gt;]
+</a>
+{{ nextPost.data.pageTitle }}
+{% endif %}

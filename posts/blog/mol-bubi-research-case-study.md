@@ -114,3 +114,5 @@ Other transportation types, like shared cars, received positive feedbacks, but p
 **Challenges:**
 - Doing it online affects the behaviour of the user. They seem more uncomfortable talking to a screen instead of a real person
 - The prototype wasn’t 100% accurate, but didn’t have time to make it perfect
+
+{% include 'page_navigation.liquid' %}
